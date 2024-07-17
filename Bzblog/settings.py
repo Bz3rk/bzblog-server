@@ -93,7 +93,8 @@ WSGI_APPLICATION = 'Bzblog.wsgi.application'
 
 if not DEBUG:
     DATABASES = {
-	"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))
+	# "default": dj_database_url.parse(os.environ.get("DATABASE_URL"))
+	"default": dj_database_url.config(default='postgresql://bzblog_db_i2rw_user:TMaRUBQut3B8bVX37rhk2r0TCSSU0tPo@dpg-cqbqbamehbks73dtdfeg-a.oregon-postgres.render.com/bzblog_db_i2rw')
 }
 
 
