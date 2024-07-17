@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-49uuh-+2+f6$1kgwpxgwlk2vpk^)08%xde^2^=p_5ljbzc2z@&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "https://bzblog-server.onrender.com",
+]
 
 
 # Application definition
@@ -112,8 +114,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 CORS_ALLOWED_ORIGINS = [
+    
     "http://localhost:5173",
-    "https://bzblog-server.onrender.com"
 ]
 
 
